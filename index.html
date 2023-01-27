@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vue Fixer</title>
+  </head>
+  <body>
+    <div class="background">
+      <div></div>
+    </div>
+
+    <div id="app" class="main-elements">
+      <div>
+        <!-- <div id="app">{{currencies}}</div> -->
+        <form class="" action="">
+          <div class="case">
+            <label for="amount">Montant: </label>
+            <input
+              type="number"
+              name="amount"
+              v-model="amount"
+              placeholder="Amount..."
+              @input="updateAmount"
+            />
+          </div>
+          <div class="case">
+            <label for="entry_cur">Dévise d'entrée</label>
+            <select name="entry_cur" id="" v-model="from">
+              <option v-for="(currency, key) in currencies" :value="key">
+                {{ currency }} ({{key}})
+              </option>
+            </select>
+          </div>
+          <div class="case">
+            <label for="exit_cur">Dévise de sortie</label>
+            <select name="exit_cur" id="" v-model="to">
+              <option value="">All</option>
+              <option v-for="(currency, key) in currencies" :value="key">
+                {{ currency }} ({{key}})
+              </option>
+            </select>
+          </div>
+          <button v-on:click.prevent="convertCurrency">See rates</button>
+
+          <div class="rates">
+            <h2>Rates</h2>
+            <ol>
+              <li>{{currencyRates}}</li>
+              <li>Rate 2</li>
+            </ol>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+
+  <script defer src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script defer type="module" src="app.js"></script>
+</html>

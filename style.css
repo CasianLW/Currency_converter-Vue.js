@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(239, 220, 255);
+}
+
+.background {
+  width: 90vw;
+  height: 70vh;
+  overflow: hidden;
+  background: url("https://images.unsplash.com/photo-1477346611705-65d1883cee1e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2vw;
+  left: 5vw;
+  overflow: hidden; /* Safari 6.0 - 9.0 */
+  filter: grayscale(50%);
+  box-shadow: 0px 0px 24px 5px rgba(0, 0, 0, 0.74);
+  border-radius: 25px 25px 25px 25px;
+}
+
+.background div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 192, 203, 0.2);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+.main-elements {
+  width: 90vw;
+  position: absolute;
+  top: 2vw;
+  left: 5vw;
+  width: 90vw;
+  height: 70vh;
+}
+
+.main-elements > div {
+  width: 100%;
+  height: 100%;
+}
+.main-elements > div form {
+  padding: 25px;
+  background-color: white;
+  border-radius: 25px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.case {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}/*# sourceMappingURL=style.css.map */
