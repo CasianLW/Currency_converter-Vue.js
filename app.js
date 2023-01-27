@@ -133,7 +133,7 @@ const options = {
   },
   mounted() {
     console.log("Mounted");
-    // convertCurrency();
+    this.convertCurrency();
   },
   methods: {
     async convertCurrency() {
