@@ -46,6 +46,7 @@ body {
   height: 100%;
 }
 .main-elements > div form {
+  min-width: 50%;
   padding: 25px;
   background-color: white;
   border-radius: 25px;
@@ -60,4 +61,15 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+}
+
+button {
+  border: 1px solid rgba(70, 57, 162, 0.3);
+  padding: 8px 12px;
+  margin: auto;
+}
+
+button:hover {
+  background-color: white;
+  border: 1px solid rgb(70, 57, 162);
 }/*# sourceMappingURL=style.css.map */
