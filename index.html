@@ -42,7 +42,7 @@
           <div class="case">
             <label for="exit_cur">Dévise de sortie</label>
             <select name="exit_cur" id="" v-model="to">
-              <option value="">All</option>
+              <option :value="all">All</option>
               <option v-for="(currency, key) in currencies" :value="key">
                 {{ currency }} ({{key}})
               </option>
