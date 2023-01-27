@@ -159,21 +159,6 @@ const options = {
       this.to = event.target.value;
     },
   },
-  //   computed: {
-  //     selectedFrom: {
-  //       get() {
-  //         return this.from;
-  //       },
-  //       set(value) {
-  //         this.from = value;
-  //         // this.selectedCurrenciesString =
-  //         //   this.selectedCurrenciesString + " " + value;
-  //       },
-  //     },
-  //     fullName() {
-  //       return `${this.user.firstName} ${this.user.lastName}`;
-  //     },
-  //   },
 };
 
 const app = Vue.createApp(options).mount("#app");
