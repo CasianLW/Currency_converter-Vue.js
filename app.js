@@ -30,15 +30,7 @@ const options = {
       console.log(error);
     }
   },
-  components: {
-    MainMenu: MainMenu,
-    MainComponent: MainComponent,
-    Users: Users,
-    Counter: Counter,
-    One: One,
-    Two: Two,
-    Increment: Increment,
-  },
+  components: {},
   mounted() {
     console.log("Mounted");
     this.convertCurrency();
