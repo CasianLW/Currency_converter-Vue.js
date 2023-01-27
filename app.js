@@ -143,6 +143,7 @@ const options = {
           `https://api.frankfurter.app/latest?amount=${this.amount}&from=${this.from}&to=${this.to}`
         );
         const data = await response.json();
+        // this.currencyRates = Object.entries(data);
         this.currencyRates = data;
         console.log(data);
       } catch (error) {
