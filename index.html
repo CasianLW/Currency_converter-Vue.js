@@ -46,11 +46,18 @@
           <button v-on:click.prevent="convertCurrency">See rates</button>
 
           <div class="rates">
-            <h2>Rates</h2>
-            <ol>
-              <li>{{currencyRates}}</li>
-              <li>Rate 2</li>
-            </ol>
+            <!-- {{currencyRates}} -->
+            <h2>Rates:</h2>
+            <div style="display: flex">
+              <p>{{currencyRates.amount}} {{currencyRates.base}} =></p>
+              <p v-for="(value, monnaie) in currencyRates.rates">
+                {{value}} {{monnaie}}
+              </p>
+            </div>
+            <p>*valables au {{currencyRates.date}}</p>
+            <!-- <li v-for="(currency, key) in currencyRates">
+                {{currency}} {{key}}
+              </li> -->
           </div>
         </form>
       </div>
