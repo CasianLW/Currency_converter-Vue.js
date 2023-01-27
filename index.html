@@ -53,8 +53,10 @@
           <div class="rates">
             <!-- {{currencyRates}} -->
             <h2>Rates:</h2>
-            <div style="display: flex">
-              <p>{{currencyRates.amount}} {{currencyRates.base}} =></p>
+            <div style="display: block">
+              <p class="from_value">
+                {{currencyRates.amount}} {{currencyRates.base}} =>
+              </p>
               <p v-for="(value, monnaie) in currencyRates.rates">
                 {{value}} {{monnaie}}
               </p>
